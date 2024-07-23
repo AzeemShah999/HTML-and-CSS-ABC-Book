@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .alphabet-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .alphabet-links a {
+            margin: 5px 10px;
+            font-size: 2em;
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s;
+        }
+        .alphabet-links a:hover {
+            color: #ffcc00;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        section {
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .alphabet {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .alphabet h2 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff5733;
+            text-shadow: 1px 1px 2px #000;
+            flex-shrink: 0;
+            margin-right: 20px; /* Added spacing between text and image */
+        }
+        .alphabet img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .alphabet:nth-child(2n) h2 {
+            color: #33c3ff;
+        }
+        .alphabet:nth-child(3n) h2 {
+            color: #33ff57;
+        }
+        .alphabet:nth-child(4n) h2 {
+            color: #ff33b5;
+        }
+        .alphabet:nth-child(5n) h2 {
+            color: #ff9633;
+        }
+        footer {
+            background-color: #ffcc00;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+        }
+        /* Top button styles */
+        #topButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #topButton:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABC Book</h1>
+        <div class="alphabet-links">
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#R">R</a>
+            <a href="#S">S</a>
+            <a href="#T">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#X">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="alphabet" id="A">
+                <h2>A for Apple</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Apple">
+            </div>
+            <div class="alphabet" id="B">
+                <h2>B for Ball</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Soccer_ball.svg" alt="Ball">
+            </div>
+            <div class="alphabet" id="C">
+                <h2>C for Cat</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Cat">
+            </div>
+            <div class="alphabet" id="D">
+                <h2>D for Dog</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/CT_Dog.jpg" alt="Dog">
+            </div>
+            <div class="alphabet" id="E">
+                <h2>E for Elephant</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="Elephant">
+            </div>
+            <div class="alphabet" id="F">
+                <h2>F for Fish</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tropical_fish_in_aquarium.jpg" alt="Fish">
+            </div>
+            <div class="alphabet" id="G">
+                <h2>G for Giraffe</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe04_-_melbourne_zoo.jpg" alt="Giraffe">
+            </div>
+            <div class="alphabet" id="H">
+                <h2>H for House</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/House_Highland_Scotland.jpg" alt="House">
+            </div>
+            <div class="alphabet" id="I">
+                <h2>I for Ice Cream</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Vanilla_Ice_Cream_Cone.jpg" alt="Ice Cream">
+            </div>
+            <div class="alphabet" id="J">
+                <h2>J for Juice</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Orange_juice_1.jpg" alt="Juice">
+            </div>
+            <div class="alphabet" id="K">
+                <h2>K for Kite</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Kite.jpg" alt="Kite">
+            </div>
+            <div class="alphabet" id="L">
+                <h2>L for Lion</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="Lion">
+            </div>
+            <div class="alphabet" id="M">
+                <h2>M for Monkey</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Capuchin_Costa_Rica.jpg" alt="Monkey">
+            </div>
+            <div class="alphabet" id="N">
+                <h2>N for Nest</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Rook_Nest.jpg" alt="Nest">
+            </div>
+            <div class="alphabet" id="O">
+                <h2>O for Orange</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" alt="Orange">
+            </div>
+            <div class="alphabet" id="P">
+                <h2>P for Parrot</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Blue_Headed_Parrot.jpg" alt="Parrot">
+            </div>
+            <div class="alphabet" id="Q">
+                <h2>Q for Queen</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Chess_piece_-_White_queen.JPG" alt="Queen">
+            </div>
+            <div class="alphabet" id="R">
+                <h2>R for Rabbit</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Adult_male_rabbit.jpg" alt="Rabbit">
+            </div>
+            <div class="alphabet" id="S">
+                <h2>S for Sun</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Sunrise_%2851864162501%29.jpg" alt="Sun">
+            </div>
+            <div class="alphabet" id="T">
+                <h2>T for Tiger</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger">
+            </div>
+            <div class="alphabet" id="U">
+                <h2>U for Umbrella</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Umbrella.jpg" alt="Umbrella">
+            </div>
+            <div class="alphabet" id="V">
+                <h2>V for Violin</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Violin_VL100.jpg" alt="Violin">
+            </div>
+            <div class="alphabet" id="W">
+                <h2>W for Whale</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Humpback_Whale_underwater_shot.jpg" alt="Whale">
+            </div>
+            <div class="alphabet" id="X">
+                <h2>X for Xylophone</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Xylophone.jpg" alt="Xylophone">
+            </div>
+            <div class="alphabet" id="Y">
+                <h2>Y for Yacht</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Yacht.jpg" alt="Yacht">
+            </div>
+            <div class="alphabet" id="Z">
+                <h2>Z for Zebra</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Plains_Zebra_Equus_quagga.jpg" alt="Zebra">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ABC Book. All rights reserved.</p>
+    </footer>
+    <!-- Top button -->
+    <button id="topButton" color="red" onclick="scrollToTop()">Top</button>
+
+    <script>
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
